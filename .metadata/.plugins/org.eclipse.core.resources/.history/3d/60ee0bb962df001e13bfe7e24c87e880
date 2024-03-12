@@ -1,0 +1,9 @@
+package com.cyb;
+
+public class ExtendsAbstartClass {
+
+	public ExtendsAbstartClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

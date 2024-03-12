@@ -1,0 +1,22 @@
+package com_yubin;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int n1;
+		int n2=0;
+		int a=0,b,c,d,e;
+		int n11=10;
+		n1=100;
+		int temp=n1+n2+n11 +a;
+		a='A'; // 65
+		// char ch=a;   1byte에 4byte가 들어오지 못해 오류
+		float f1 =10.5f; //f 넣어주지 않으면 오류 
+							//-실수형에 float, double 두 개의 형이 있기 때문
+		
+								
+		System.out.println(temp);
+		System.out.print(a);
+	}
+
+}

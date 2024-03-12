@@ -1,0 +1,49 @@
+	ArrayList aList =new ArrayList(); //숫자, 문자, T/F 다 받을 수 있음
+	// ArrayList 데이터 추가 : add()
+	aList.add("name");
+	aList.add(10);
+	aList.add(13.5);
+	aList.add(true);
+	aList.add("야");
+		
+	// ArrayList 데이터 추출 : get(index)
+	System.out.println(aList.get(0));
+	System.out.println(aList.get(1));
+	System.out.println(aList.get(2));
+	System.out.println(aList.get(3));
+	System.out.println(aList.get(4));
+	
+	// ArrayList 데이터 삭제 : remove(index) ->		****순번 변화함!!!!!
+	aList.remove(0);
+	System.out.println(aList.get(0));
+	System.out.println(aList.get(1));
+	System.out.println(aList.get(2));
+	System.out.println(aList.get(3));
+	
+	// ArrayList 데이터 갯수 : size()
+	System.out.println(aList.size());
+	
+		/*
+	ArrayList의 주 목적은 객체를 저장하기 위함!!
+	따라서 ArrayList의 대부분의 메서드는 
+	매겨변수의 데이터형이 Object로 설정되어 있다!
+	
+	ArrayList의 장점
+	추가, 삭제되는 데이터의 갯수에 따라 전체 크기가 변화된다.
+	즉, 유동적으로 데이터를 보관(저장)할 수 있다.
+	
+	어떤 일을 순차적으로 작업할 경우에 뛰어난 효과를 발휘한다!!
+	 */
+	 
+	remove 메서드 
+	-> 어떤일을 순차적으로할때 편함
+	-> 데이터가 들어올때 병목현상이 일어나지 않음
+	 
+	ArrayList <예약어>
+	-> import java.util.ArrayList; 해줘야함
+	-> <예약어>는 데이터 타입 정의해줌
+	ArrayList<Integer> aList = new ArrayList<Integer>();	// 정수형 
+	ArrayList aList2 =new ArrayList();	// 예약타입 선언 하지 않아 조상 타입인 object타입이 됨
+	
+	ctrl + shift + o => import 문 자동추가
+		

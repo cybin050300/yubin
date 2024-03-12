@@ -1,0 +1,135 @@
+ local PC의 데이터를 다룰 경우
+ 또는 외부자원 DB, 인터넷 등을 다룰때는
+ 반드시 예외처리가 필요
+ 
+ 예외처리 구문
+ try{
+ 	// 외부자원 처리 내용
+ }catch(예외처리 클래스타입 매개변수){
+ 	// 외부자원 처리하다 오류가 발생했을 경우에만 실행됨
+ }
+ 
+ try{
+ }catch(예외처리 클래스){
+ 
+ }catch(예외처리 클래스){
+ 
+ }
+ 
+  try{
+	 // 외부자원 처리 내용
+ }catch(예외처리 클래스){
+ 	// 외부자원 처리하다 오류가 발생했을 경우에만 실행됨
+ }finally(예외처리 클래스){
+ 	//try{} 성공, catch(){} 실행 후,
+ 	// 주로 자원해제 코드(즉, 자원해제 메서드 호출 : close())
+ }
+ 	
+ 	예외처리 구문2 : 메서드 선언부에서 예외처리
+ 	public void test() throws 예외처리클래스{
+ 	
+ 	}
+ 	public void test() throws 예외처리클래스1, 예외처리클래스2, 예외처리클래스3{
+ 	
+ 	}
+ 	-----------------------------
+ 	메서드 내에서 예외처리 : try{}catch(){}
+ 	메서드 선언부에서 예외처리 단점 : (메서드 선언부에서 예외처리할 때 라이브러리에서 선언됨)
+ 		해당 메서드를 호출하는 곳에서 다시 예외처리해야 한다!! -> 메서드 내에서 예외처리하면 됨
+ 	----------------------------
+ 	예외처리클래스 조상 클래스 : Exception.class
+ 	입출력 관련 : IOException.class
+ 	데이터베이스 관련 : SQLExcetpion.class
+ 	입출력, 데이터베이스 클래스대신 조상 클래스를 따라도 예외 처리 수행은 가능(만약 해당 클래스가 기억이 안나면...?)
+ 		but, 구체적 확인(어떤 문제가 어디서 발생했는가) 확인이 어려움
+ 	------------------------------
+ 	외부파일을 읽거나 쓰기
+ 	파일 조상 클래스 : File.class
+ 	파일을 읽는 클래스 : FileReader.class
+ 		FileReader fr = new FileReader("파일의 경로 및 파일명,확장자"); //파일을 읽기위해 받아옴("어디서")
+ 		예) c:\filetest\~~~.txt
+ 			 c:/filetest/~~~.txt 
+ 			 
+ 			 특징 : 한 문자 단위로 읽는다!
+ 			 	더이상 읽을 문자가 없을 경우, null 값 반환
+ 			 	(일반적으로 파일을 읽을 때 한 라인 단위로 읽어옴)
+ 			 
+ 			 한 라인 단위로 읽어낼 경우 : BufferReader.class
+ 			 	BufferReader br = new BufferReader(FileReader객체);
+ 			 	실제로 한줄  단위로 읽어내는 메서드 : BufferReader.readLine()
+ 			 	
+ 			 	String temp = br.readLine();
+ 			 	
+ 			 	temp == null
+ 			 	
+ 			 	String temp = null;
+ 			 	while( (temp = br.readLine()) != null){
+ 			 		System.out.println(temp);
+ 			 		}
+ 			 		// 사용종료된 자원해제...
+ 			 		br.close();
+ 			 		fr.close();
+ 			 	
+ 			 	wile(비교조건){
+ 			 		실행 내용...
+ 			 	}
+ 			 	
+ 			 	int n=0;
+ 			 	while(n<10){
+ 			 		실행 내용...
+ 			 	}
+ 			 	
+
+ 	파일에 쓰는 클래스 : FileWriter.class
+ 	Filewriter fw = new FileWriter("저장할 파일의 경로 및 파일명,확장자");
+ 	fw.writer("파일에 저장할 문자열..\n두번째 문장");
+ 	fw.close();
+ 	
+ 	FileWriter는 경로는 반드시 존재해야 한다.
+ 	단, 파일은 없어도 자동으로 생성시켜준다!
+ 	(현재 폴더에 없는 파일을 만들어줌)
+ 	 -> 그래서 예외처리가 필요함!)
+ 	 
+ 	 ----------------------------------
+ 	 Filewriter fw = null;	//(try내부에서 사용된 변수는 catch에서 사용하지 못함 => try 위에 선언해줘야함)
+ 	 try{
+ 	 	fw = new FileWriter("저장할 파일의 경로 및 파일명,확장자");
+ 		fw.writer("파일에 저장할 문자열..\n두번째 문장");
+ 		fw.close(); 
+ 		
+ 	 }catch(Excetion e){
+ 	 	어떤 문제가 발생했는지 넣어줌 - > 화면에 뿌려줌
+ 	 }
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	

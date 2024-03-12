@@ -1,0 +1,9 @@
+package com.cyb;
+
+public class GenClass {
+
+	public GenClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

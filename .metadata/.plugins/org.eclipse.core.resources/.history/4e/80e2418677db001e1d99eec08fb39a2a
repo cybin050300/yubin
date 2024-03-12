@@ -1,0 +1,36 @@
+package com.cyb.employee;
+
+public class EMPMainClass {
+
+	public static void main(String[] args) {
+		int[] age = { 27, 34, 28, 26, 41, 28, 42, 29, 29, 32 };
+
+		// 모든 사원의 나이 합
+		// 1. 나이 누적변수 : int ageSum=0;
+		// 2. 모든 (전체 데이터) : for()
+		int ageSum = 0;
+		for (int n = 0; n < age.length; n++) {
+			ageSum = ageSum + age[n];
+		}
+		System.out.println("전체 사원 나이 합 : " + ageSum);
+
+		// 모든 사원의 평균나이
+		// 1. 평균 : 합 / 인원수 ==> 평균저자 변수 : float avg;
+		// 2. 누적합 변수 : int sumAge=0;
+		// 3. 인원수 변수 : int count=0;.
+		// 4. 모든 (전체 데이터) : for()
+		int sumAge = 0;
+		int count = 0;
+
+		for (int n = 0; n < age.length; n++) {
+			sumAge = sumAge + age[n];
+			count = count + 1; // count++와 동일
+		}
+
+		double avg = (double)sumAge / count;
+		System.out.println("사원들의 평균 나이 : " + avg);
+		// 자바에서는 형변환 해주는것이 더 오래걸림
+		// 평균을 구할때는 double형
+	}
+
+}

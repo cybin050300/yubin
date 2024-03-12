@@ -1,0 +1,9 @@
+package com.cyb.ex;
+
+public class ChildClass {
+
+	public ChildClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,61 @@
+ 	CafeClass 객체
+ 
+ 	DataClass 내 전체 데이터 보관 ArrayList
+ 		static ArrayList<CafeClass> cafe=new ArrayList<CafeClass>();
+		
+		최고 많이 판매된 상품명 구하기(상품명 중복)
+		1. CafeClass.item "카라멜 마끼아또"
+		전체 데이터에서 item만 추출하여 저장하는 별도의 ArrayList 생성
+		static ArrayList<String> items=new ArrayList<String>();
+		
+		2. items에서 중복된 상품명 제거
+			static ArrayList<String> no cafe=new ArrayList<String>();	
+			중복제거 방법
+			"A", "B", "C", "D", "A", "C", "B"
+			"A", "A" "B", "B", "C", "C", "D"	<=== ArrayList.sort(정렬방식)
+		ArrayList.sort(Comparator.naturalOrder());
+		 => 주의사항 : 원본 데이터 순서가 정렬됨!!!
+		 => 반환 값이 없다!
+		 "A", "A" "B", "B", "C", "C", "D"	<=== datas
+		 for(int i=0;i<datas.size();i++){
+		 String temp = ""; // 비교할 데이터 임시 저장
+		 
+		 if(	temp.equals(datas.get(i)){	// 다르면
+		 temp = datas.get(i);
+		 no.add(temp);
+		 	}													// 정렬 해놓고 중복제거해라
+		
+		3. ItemCountClass를 이용하여 중복제거된 items 들을 하나의 객체로 생성
+		String item / int count=0;
+		ItemCountClass(String item){
+		this.item=item;
+		}
+		
+		4. 중복제거된 items 들과 전체 상품명 데이터와 비교하여 countings,,,
+			static ArrayList<String> itemList=new ArrayList<String>();
+		
+		ItemCountClass.item과 동일할 경우에만
+		ItemCountClass.count++;
+		
+		5. counting 종료후, 최대 count 값을 확인하여 해당 상품명 출력!
+			가장 큰 값 구하기
+			
+			1, 4, 5, 3, 6, 9, 7 ,8	<= nums
+		int n = 0;
+		for(int k = 0; k< nums.size(); k++){
+					if(n< nums.get(k){
+				n=k;
+		}
+		}
+		
+		
+		
+		add() 특정 위치에 삽입
+		add( , )
+		set(, 객체) : 지정 index값 바꿔치기 하기insert 개념
+		remove 제거
+		clear 전체 제거
+		sort 중요@@@
+		
+		상속, 인터페이스, 추상클래스 할거임
+			

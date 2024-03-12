@@ -1,0 +1,17 @@
+package com.cyb.cafe;
+
+public class ItemCountClass {
+	
+	public static  String item = null;
+	public static int count = 0;
+
+	public ItemCountClass() {
+		// item 명과 count 값을 하나의 객체로
+		String item = "";
+		int count = 0;
+	}
+
+	public ItemCountClass(String item) { // 내부 생성자
+	}
+
+}

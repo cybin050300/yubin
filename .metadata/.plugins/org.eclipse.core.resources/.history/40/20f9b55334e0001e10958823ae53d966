@@ -1,0 +1,14 @@
+package com.cyb.db;
+
+public class DBReadWriteClass {
+
+	public DBReadWriteClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

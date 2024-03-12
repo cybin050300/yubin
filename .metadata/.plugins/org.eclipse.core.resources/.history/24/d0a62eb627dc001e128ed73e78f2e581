@@ -1,0 +1,23 @@
+package com.cyb.split;
+
+public class SplitMainClass {
+
+	public static void main(String[] args) {
+
+		DataClass dc =new DataClass();
+		
+		MemberClass[] mcArray = new MemberClass[98];	// Record 처리
+		for(int m=0; m<mcArray.length; m++) {
+//			MemberClass mc =new MemberClass(); 
+//			mcArray[m]=mcArray;		// 배열에는 인덱스 번호가 있기 때문에 굳이 새로 생성할 필요x
+			mcArray[m]=new MemberClass();
+			mcArray[m].inputRecord(dc.member[m]);
+		}
+		
+		//연산 전용 객체 생성
+		MethodClass method =new MethodClass();
+		method.sum(mcArray);
+	}
+		
+
+}

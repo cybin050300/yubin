@@ -1,0 +1,9 @@
+package com.cyb;
+
+public class ExtendClassTwo {
+
+	public ExtendClassTwo() {
+		System.out.println("ExtendClassTwo() 생성자 호출");
+	}
+
+}

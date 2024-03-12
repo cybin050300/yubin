@@ -1,0 +1,32 @@
+package com.cyb.split;
+
+public class SplitMainClass {
+
+	public static void main(String[] args) {
+
+		DataClass dc =new DataClass();
+		
+		MemberClass[] mcArray = new MemberClass[98];	// Record 처리
+		for(int m=0; m<mcArray.length; m++) {
+//			MemberClass mc =new MemberClass(); 
+//			mcArray[m]=mcArray;		// 배열에는 인덱스 번호가 있기 때문에 굳이 새로 생성할 필요x
+			mcArray[m]=new MemberClass();
+			mcArray[m].inputRecord(dc.member[m]);
+		}
+		
+		//연산 전용 객체 생성
+		MethodClass method =new MethodClass();
+		int sum =method.sum(mcArray);	// 나이 합 메서드 호출
+		double avg=method.avg(sum, mcArray.length);	// 나이 합을 이용하여 평균 구하는 메서드
+		System.out.println(avg);
+		
+		// 이름 검색하기
+		String name = "";
+		int visit =method.searchName(name,mcArray);
+		System.out.println(name+"님의 방문 횟수는 총 "+visit+"번 입니다.");
+		
+	}
+	
+		
+
+}

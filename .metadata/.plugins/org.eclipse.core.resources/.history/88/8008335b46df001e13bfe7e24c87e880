@@ -1,0 +1,9 @@
+package com.cyb.cafe;
+
+public class ItemCountClass {
+
+	public ItemCountClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

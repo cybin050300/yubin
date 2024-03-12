@@ -1,0 +1,61 @@
+package com.cyb.employee;
+
+public class EMPMainClass {
+
+	public static void main(String[] args) {
+		int[] age = { 27, 34, 28, 26, 41, 28, 42, 29, 29, 32 };
+		char[] gender = { 'F', 'M', 'F', 'M', 'M', 'F', 'M', 'M', 'F', 'M' };
+		int[] pay={460,200,250,300,300,200,350,200,400,440};
+
+		// 모든 사원의 나이 합
+		// 1. 나이 누적변수 : int ageSum=0;
+		// 2. 모든 (전체 데이터) : for()
+		int ageSum = 0;
+		for (int n = 0; n < age.length; n++) {
+			ageSum = ageSum + age[n];
+		}
+		System.out.println("전체 사원 나이 합 : " + ageSum);
+
+		// 모든 사원의 평균나이
+		// 1. 평균 : 합 / 인원수 ==> 평균저자 변수 : float avg;
+		// 2. 누적합 변수 : int sumAge=0;
+		// 3. 인원수 변수 : int count=0;.
+		// 4. 모든 (전체 데이터) : for()
+		int sumAge = 0;
+		int count = 0;
+
+		for (int n = 0; n < age.length; n++) {
+			sumAge = sumAge + age[n];
+			count = count + 1; // count++와 동일
+		}
+
+		double avg = (double) sumAge / count;
+		System.out.println("사원들의 평균 나이 : " + avg);
+		// 자바에서는 형변환 해주는것이 더 오래걸림
+		// 평균을 구할때는 double형
+
+		// 성별이 여자인 인원 수
+		// 1. 인원수 변수: int fSum=0;
+		// 2. for()
+		// 3. if()
+		char g = 'F';
+		int fSum = 0;
+		for (int n = 0; n < gender.length; n++) {
+			if (gender[n] == g) {
+				fSum = fSum + 1; // fSum++와 동일
+			}
+		}
+		System.out.println("여자 사원의 인원수: " + fSum);
+		
+		// 성별에 따른 급여 합
+		// 급여 합변수 : int sumPay=0;
+		int sumPay=0;
+		for(int n=0; n<gender.length; n++) {
+			if(gender[n] == g) {
+				sumPay = sumPay +pay[n];
+			}
+		}
+		System.out.println("성별에 따른 급여 합"+sumPay);
+	}
+
+}

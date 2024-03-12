@@ -1,0 +1,64 @@
+ 변수 : 한번에 하나의 데이터(값)만 저장 가능
+ 	단, 자료형이 같아야 한다!!
+ 자료형 : 정수 int(integer)
+ 	 		실수 float
+ 			논리 boolean
+ 			문자 char
+ 문자열 String
+ 		int n1;
+		int n2=0;
+		int a=0,b,c,d,e;
+		int n11=10;
+		n1=100;
+		int temp=n1+n2+n11 +a;
+		a='A'; // 65
+		// char ch=a;   1byte에 4byte가 들어오지 못해 오류
+		float f1 =10.5f; //f 넣어주지 않으면 오류 
+							//-실수형에 float, double 두 개의 형이 있기 때문
+								
+ 배열 : 한 번에 동일한 타입의 여러 값을 저장
+ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	=> 배열의 index번호가 범위를 벗어났다!!
+	
+	"개발자는 자신감을 갖되 자만심을 가지면 안된다!! 엄청난 실수 불러옴"
+	업무 시 사본 필! 사본으로 작업해라
+	
+	
+반복문 : 동일한 코드를 줄이기 위한 문..
+	for(변수의 초기값 ; 비교조건 ; 증감연산 ){
+	비교조건 결과 true일 경우 실행할 내용들...
+	}
+		1(1회실행)		2,5		4,7
+		for(변수의 초기값 ;  ; 증감연산 ){
+		3,6
+		비교조건 결과 true일 경우 실행할 내용들...
+	}
+	
+	for(int i=0;	i<4;	i++){
+		System.out.println(i);
+		}
+					2					1
+	for( 다중값 저장변수 선언 : 저장값 ){
+			3
+	}
+	
+	for(  ;  ;  ){
+		if(비교){
+			실행내용
+			break;
+			}
+		}
+	
+	******************************
+	 프로젝트 여러 개가 열려있으면 eclipse는 코드 실행시 모든 프로젝트 오류를 잡는다.
+	Java WEB 할때 특히! 조심할 것!!
+	******************************
+	
+	
+	
+	
+	
+	
+	
+	
+	

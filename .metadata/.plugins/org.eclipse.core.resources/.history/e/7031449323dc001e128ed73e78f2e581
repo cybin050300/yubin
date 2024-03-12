@@ -1,0 +1,14 @@
+package com.cyb.split;
+
+public class SplitMainClass {
+
+	public static void main(String[] args) {
+
+		DataClass dc =new DataClass();
+		MemberClass mc1 = new MemberClass();
+		mc1.inputRecord(dc.member[5]);
+		System.out.println(mc1.age);
+	}
+		
+
+}

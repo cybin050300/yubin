@@ -1,0 +1,6 @@
+package com.cyb;
+
+public class InterfaceClassTwo {
+	public boolean temp = true;
+	
+}

@@ -1,0 +1,54 @@
+package com_yubin;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int[] arr = new int[4];
+		int arr2[] =new int[4];
+		arr[0] = 10;
+		arr[1]=  20;
+		arr[2]=  30;
+		arr[3] = 40;
+//		arr[4] = 50;
+		
+		if(10 < 20 || arr[1] == arr[2]) {
+			System.out.println("참");
+		}else {
+			System.out.println("거짓");
+		}
+		
+		
+		// 비교(if)
+		// 비교연산자: >, <, >=, <=, ==, !=
+		// 비교연산자의 결과를 판단 => 논리연산자: &&, ||, !
+		// 그리고, ~이고 &&(AND) tree && true ==> true
+		// 또는, || (OR) false || false ==> false
+		// true <=> false => !
+		/*
+		//  if(비교값 비교연산자 비교값){	
+		 * 		비교연산의 결과가 true일 경우 실행 내용
+		 }else{
+		 		비교연산의 결과가 false일 경우 실행 내용
+		 		}
+		 */
+/*
+ * 연령이 34세 이상이면 월지원금 100만원..
+ * age 34 >=  if print
+ */
+		int age = 40;
+		String money ="100만원";
+		if(age >=34) {
+			System.out.println(money);
+			
+		}
+		
+		String str;
+		String str2="강";
+		str="강강";
+		
+		System.out.println(arr.length);
+		System.out.println();
+
+	}
+
+}

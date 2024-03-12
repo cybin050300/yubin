@@ -1,0 +1,9 @@
+package com.cyb.split;
+
+public class MemberClass {
+
+	public MemberClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

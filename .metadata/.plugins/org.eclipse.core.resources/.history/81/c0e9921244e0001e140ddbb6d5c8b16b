@@ -1,0 +1,9 @@
+package com.cyb.utill.copy;
+
+public class UtillClass {
+
+	public UtillClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

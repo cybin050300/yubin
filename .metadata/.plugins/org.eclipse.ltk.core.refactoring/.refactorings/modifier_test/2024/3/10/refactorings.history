@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.cybmodifier.TextClass.java&apos; to &apos;TestClass.java&apos;&#x0D;&#x0A;- Original project: &apos;modifier_test&apos;&#x0D;&#x0A;- Original element: &apos;com.cybmodifier.TextClass.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.cybmodifier.TestClass.java&apos;" description="Rename compilation unit &apos;TextClass.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.cybmodifier{TextClass.java" name="TestClass.java" references="false" stamp="1709794299730" version="1.0"/>
+</session>

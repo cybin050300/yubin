@@ -1,0 +1,100 @@
+Java는 절대 DB 서버에 직접 접근 불가!
+반드시 해당 DB서버에 접근할 수 있는 드라이버가 필요
+드라이버는 DB벤더사에서 제공
+mysql-connector-j-8.0.32.jar
+
+1. DB 접속하는 프로젝트에서는 먼저 jar 파일을 참조할 수 있어야 한다.
+Builder path =>Add Externel (Jars) 
+
+2. mySQL 에 접속할 수 있는 드라이버 로드
+ Class.forName("com.mysql.cj.jdbc.Driver");
+	 mysql.cj.jdbc.Driver클래스를 불러오는 메소드 Class.forName
+	 =>ClassNotFoundExcetion
+	 
+3. mySQL DB Server와 접속
+	DriverManager.getConnection("접속주소 및 사용db명", "아이디","비번");
+		접속주소 ==> jdbc:mysql://localhost:3306/db명
+		=> Connection 객체를 반환받아야 한다.
+		=> SQLException (포트번호나 db명이 없을시)
+		* localhost=> 127.0.0.1
+		* port 번호: 특정 프로그램과 데이터를 주고 받을 수 있는 통로(gate)
+		
+4. SQL 를 실행 의뢰할 수 있는 객체 얻기
+	3번에서 반환받은 Connection 객체를 통해 얻을 수 있다.
+	State,emt st,t = Connection객체.createStateMent();
+	=> 문제시 SQLException 
+	
+	5. SQL 실행의뢰 객체를 통해 질의(조회 등,,)하기
+	PreparedStatement / Statement
+	
+	SQL 쿼리문을통해 의뢰
+	String query = "select *from test";
+	조회의 경우 => 결과값을 ResultSet 객체로 반환
+	실제 의뢰 => Statement객체.executeQuery(쿼리문);
+	
+	데이터(레코드) 삽입, 수정, 삭제
+	실제 의뢰 => Statement객체.executeUpdate(쿼리문);
+	이때 반환되는 값은 int
+	
+	6. 조회의 경우
+		while(ResultSet객체.next()){
+			String s = ResultSet객체.getString(레코드필드명);
+			String s = ResultSet객체.getString(레코드index);
+		}
+		=> 문제시 SQLException 
+		
+	7. 자원해제 : close()
+		 ResultSet객체.close()
+		 Statement객체.close()
+		 Connection객체.close()
+		=> 문제시 SQLException 
+		
+		==============================================
+		MySQL 다루기
+		
+		1. 데이터베이스 조회
+		=> show databases;
+		
+		2. 데이터베이스 선택(사용)
+		=> use 데이터베이스
+		=> table을 생성 또는 다루기 위해서는 데이터베이스 선택이 되어 있어야 한다.
+		
+		3. 테이블 조회
+		=> show tables;
+		
+		4. 테이블 생성
+		=> create tables 테이블명( 필드명 데이터형, 필드명 데이터형, 필드명 데이터형,...) ;
+		
+		5. 데이터베이스 생성
+		=> create database 데이터베이스명;
+		
+		6. 생성된 테이블에 데이터 삽입(추가)
+		insert into 테이블명 (필드명, 필드명,...) values (데이터, 데이터, ...)
+		=> 단, 필드의 갯수와 데이터 갯수가 동일
+		=>     필드의 데이터형에 맞게 데이터를 추가
+		
+		7. 테이블의 데이터(레코드) 조회
+		 select * from 테이블명;
+		 select 필드명, 필드명 from 테이블명;
+		 select* from 테이블명 where 조건;
+		 => 조건 : 필드명 = 데이터 와 같은 형태로...
+		 
+		 8. 테이블에 레코드 수정
+		 update 테이블명 set 수정필드명= 수정값;
+		 => 모든 레코드 값이 수정됨!! 주의할 것!!!!!!!
+		 
+		 update set 수정필드명 = 수정값 where 조건;
+		 
+		9. 테이블의 레코드 삭제
+		delete from 테이블명;
+		 => 테이블의 모든 레코드가 삭제!! 주의할 것!!!!!
+		 
+		 delete from 테이블명  where 조건;
+		
+		 
+		update set 의 = 의미는 대입
+		select * from tbl where id='a'; 에서 =은 같다는 의미
+		
+		
+		
+		

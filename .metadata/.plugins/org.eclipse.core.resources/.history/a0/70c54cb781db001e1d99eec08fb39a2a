@@ -1,0 +1,9 @@
+package com.cyb.employee;
+
+public class EMPDataClass {
+
+	public EMPDataClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

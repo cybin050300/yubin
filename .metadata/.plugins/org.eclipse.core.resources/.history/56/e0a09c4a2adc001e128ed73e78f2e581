@@ -1,0 +1,32 @@
+package com.cyb.split;
+
+// 연산전용, 중복되는 코드틀, 라이브러리
+public class MethodClass {
+
+	public MethodClass() {
+		
+		
+	}
+	// 나이합 메서드
+		public int sum(MemberClass[] mc) {
+				int sum = 0;
+				for(int i=0; i<mc.length;i++) {
+					sum=sum+mc[i].age;
+				}
+				return sum;
+
+			}
+		// 평균 메서드
+		public void avg(int sum, int total) {
+			double a=(double)sum/total;
+		}
+		// 이름 검색 메서드
+		public void searchName() {
+			
+		}
+		public void sum() {
+			
+			
+		}
+
+}

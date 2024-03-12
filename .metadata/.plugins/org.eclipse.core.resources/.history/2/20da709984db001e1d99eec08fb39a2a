@@ -1,0 +1,10 @@
+package com.cyb.employee;
+
+public class EMPDataClass {		// 클래스 선언부
+
+	public EMPDataClass() {		// 생성자
+		System.out.println("EMPDataClass의 생성자 호출됨!");
+		
+	} //EMPDataClass() END
+
+} //EMPDataClass END

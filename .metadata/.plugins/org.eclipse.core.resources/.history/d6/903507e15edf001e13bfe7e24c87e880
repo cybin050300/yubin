@@ -1,0 +1,9 @@
+package com.cyb;
+
+public class InterfaceClassTwo {
+
+	public InterfaceClassTwo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

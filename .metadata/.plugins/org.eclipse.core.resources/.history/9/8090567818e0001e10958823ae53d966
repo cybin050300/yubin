@@ -1,0 +1,21 @@
+package com.cyb;
+
+import com.cyb.db.DataBaseClass;
+
+/**
+ * Controller
+ * Dispatcher class => Controller(조회)
+ * 						=> Controller(삽입)
+ *  					=> Controller(수정)
+ *  					=> Controller(삭제)
+ */
+public class MainClass {
+
+	public static void main(String[] args) {
+		DataBaseClass dbc = new DataBaseClass();
+		dbc.connMySQL(); // 드라이버 로드 및 접속
+		dbc.selectAll();		// 전체 레코드 조회
+
+	} // main() END
+
+}

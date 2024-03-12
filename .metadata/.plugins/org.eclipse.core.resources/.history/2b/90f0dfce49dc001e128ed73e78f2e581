@@ -1,0 +1,25 @@
+package com.cyb.cafe;
+
+public class CafeMainClass {
+
+	public static void main(String[] args) {
+		//"order_id", "order_date", "Category", "item", "price"  <== 변수명
+		//2017-09-13에 가장 많이 판매된 상품명을 출력
+		
+		// 1.데이터 준비
+		DataClass dc = new DataClass();
+		System.out.println(dc.sales.size()-1);
+		System.out.println(dc.sales.get(dc.sales.size()-1).item);
+		
+		// 2.검색 날짜 저장 변수
+		String dateString = "2017-09-13";
+		
+		// 3.검색 메서드 호출
+		MethodClass mClass = new MethodClass();
+		mClass.searchProduct(date, dc.sales);
+		
+		// 4. 결과 출력
+		
+	}
+
+}

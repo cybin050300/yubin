@@ -1,0 +1,9 @@
+package com.cybmodifier.test;
+
+public class Methodclass {
+
+	public Methodclass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,16 @@
+package com_yubin;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int n1;
+		int n2=0;
+		int a=0,b,c,d,e;
+		int n11=10;
+		n1=100;
+		int temp=n1+n2+n11 +a;
+		System.out.println(temp);
+		System.out.print(temp);
+	}
+
+}

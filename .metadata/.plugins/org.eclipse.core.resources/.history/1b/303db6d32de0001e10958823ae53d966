@@ -1,0 +1,27 @@
+package com.cyb;
+
+import com.cyb.db.DataBaseClass;
+
+/**
+ * Controller
+ * Dispatcher class => Controller(조회)
+ * 						=> Controller(삽입)
+ *  					=> Controller(수정)
+ *  					=> Controller(삭제)
+ */
+public class MainClass {
+
+	public static void main(String[] args) {
+		DataBaseClass dbc = new DataBaseClass();
+		dbc.connMySQL(); // 드라이버 로드 및 접속
+		dbc.selectAll();		// 전체 레코드 조회
+//		dbc.selectOne();	// 하나의 레코드 조회
+//		dbc.selectLimit(); 	// 전체 레코드 중 일부 레코드들만 조회
+		//dbc.insert();			// 레코드 추가  	
+		dbc.update();  		// 레코드 수정
+		dbc.delete();
+	} // main() END
+}
+/** 시험문제 **/
+// 콘솔창에서 1번 하면 전체조회 되도록
+// 2번하면 하나의 레코드 조회되도록

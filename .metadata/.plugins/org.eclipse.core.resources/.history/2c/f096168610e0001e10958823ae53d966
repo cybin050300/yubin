@@ -1,0 +1,9 @@
+package com.cyb.db;
+
+public class DataBaseClass {
+
+	public DataBaseClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
