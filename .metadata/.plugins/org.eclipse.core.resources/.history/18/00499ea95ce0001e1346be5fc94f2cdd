@@ -2,6 +2,8 @@ package com.cyb;
 
 import java.util.Scanner;
 
+import com.cyb.db.DataBaseClass;
+
 /**
  * Controller Dispatcher class => Controller(조회) => Controller(삽입) =>
  * Controller(수정) => Controller(삭제)
@@ -12,8 +14,8 @@ import java.util.Scanner;
 public class MainClass {
 
 	public static void main(String[] args) {
-//		DataBaseClass dbc = new DataBaseClass();
-//		dbc.connMySQL(); // 드라이버 로드 및 접속
+		DataBaseClass dbc = new DataBaseClass();
+		dbc.connMySQL(); // 드라이버 로드 및 접속
 //		dbc.selectAll();		// 전체 레코드 조회
 //		dbc.selectOne();	// 하나의 레코드 조회
 //		dbc.selectLimit(); 	// 전체 레코드 중 일부 레코드들만 조회
