@@ -1,7 +1,0 @@
- 변수 : 한번에 하나의 데이터(값)만 저장 가능
- 	단, 자료형이 같아야 한다!!
- 자료형 : 정수 int(integer)
- 	 		실수 float
- 			논리 boolean
- 			문자 char
- 문자열 String

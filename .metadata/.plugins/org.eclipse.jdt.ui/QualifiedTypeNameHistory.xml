@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.beans.introspect.PropertyInfo.Name"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
-    <fullyQualifiedTypeName name="com.cyb.split.DataClass"/>
-    <fullyQualifiedTypeName name="jdk.internal.org.jline.terminal.impl.jna.win.Kernel32.INPUT_RECORD"/>
-    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.security.Init"/>
-    <fullyQualifiedTypeName name="sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModLineNumberMap"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.cyb.split.MemberClass"/>
     <fullyQualifiedTypeName name="com.cyb.split.MethodClass"/>
     <fullyQualifiedTypeName name="com.cyb.split.SplitMainClass"/>
@@ -49,15 +41,23 @@
     <fullyQualifiedTypeName name="com.cyb.InterfaceClassOne"/>
     <fullyQualifiedTypeName name="com.cyb.InterfaceClass"/>
     <fullyQualifiedTypeName name="com.cyb.ExtendsAbstartClass"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="com.mysql.cj.jdbc.ha.BestResponseTimeBalanceStrategy"/>
     <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Result"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.cyb.db.DataBaseClass"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingDeque"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cyb.map.Student"/>
+    <fullyQualifiedTypeName name="com.cyb.map.HashMapTestClass"/>
 </qualifiedTypeNameHistroy>
