@@ -1,9 +1,0 @@
-package com.cybmodifier;
-
-public class TextClass {
-
-	public TextClass() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

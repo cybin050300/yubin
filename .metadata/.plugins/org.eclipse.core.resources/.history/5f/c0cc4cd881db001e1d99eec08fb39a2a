@@ -1,9 +1,0 @@
-package com.cyb.employee;
-
-public class EMPDataClass {
-
-	public EMPDataClass() {
-		
-	}
-
-}

@@ -1,9 +1,0 @@
-package com.cyb.split;
-
-public class MethodClass {
-
-	public MethodClass() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

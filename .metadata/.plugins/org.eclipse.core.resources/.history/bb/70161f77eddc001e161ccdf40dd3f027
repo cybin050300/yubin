@@ -1,9 +1,0 @@
-package com.cyb;
-
-public class FileMethodClass {
-
-	public FileMethodClass() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
