@@ -1,9 +1,0 @@
-package com.cyb;
-
-public class AbstractClass {
-
-	public AbstractClass() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

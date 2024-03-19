@@ -1,9 +1,0 @@
-package com.cyb;
-
-public class ExtendClassTwo {
-
-	public ExtendClassTwo() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

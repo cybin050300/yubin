@@ -1,9 +1,0 @@
-package com.cyb.cafe;
-
-public class CafeClass {
-
-	public CafeClass() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
